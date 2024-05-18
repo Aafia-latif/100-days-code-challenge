@@ -1,0 +1,29 @@
+/* first span styling */
+.outer1{
+    display: inline-block;
+   padding: 50px;
+   background-color: rgb(129, 189, 238);
+   border: 4px solid rgb(180, 28, 28);
+   margin: 20px;
+}
+
+.inner1{
+padding: 5px 15px 5px 15px;
+background-color: violet;
+margin: 5px 15px;
+border: 4px solid black;
+}
+/* second span styling */
+.outer2{
+padding: 50px;
+background-color: rgb(135, 203, 243);
+border: 4px solid rgb(128, 0, 90);
+margin: 20px;
+}
+
+.inner2{
+padding: 5px 15px 5px 15px;
+background-color: violet;
+margin: 5px 15px;
+border: 4px solid black;
+}
