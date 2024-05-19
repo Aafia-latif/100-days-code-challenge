@@ -1,0 +1,84 @@
+.relative{
+    position: relative;
+    background-color: rgb(223, 220, 65);
+     /* left: 30px; */
+     border: 3px solid red;
+}
+.relat{
+    position: relative;
+    left: 30px;
+    width: 250px;
+    border: 3px solid #50b8e9;
+}
+
+.static{
+    background-color: rgb(255, 0, 34);
+     bottom: 6%;
+    right: 6%;
+    width: 60px;
+    height: 60px;
+    border: 3px solid gray;
+    border-radius: 50%;
+}
+.stat{
+    position: static;
+  border: 3px solid #6921ad;
+  width: 250px;
+}
+
+.absolute{
+    background-color: #9e8dad;
+    top: 30%;
+    left:20%;
+
+}
+.rel{
+    position: relative;
+    background-color: antiquewhite;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #578812;
+}
+.absol{
+    position: absolute;
+    background-color: rosybrown ;
+    top: 80px;
+    right: 10px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #558118;
+}
+ .stick{
+    background-color: aquamarine;
+ }
+h3{
+  position: sticky;
+  top: 0;
+  background-color: rgb(235, 138, 194);
+}
+.sticky{
+    background-color: rgb(218, 194, 165);
+    width: 350px;
+    height: 300px;
+    overflow: auto;
+}
+
+.fixed{
+    position: fixed;
+    background-color: blue;
+   text-align: center;
+     bottom: 3%;
+    right: 3%;
+    width: 60px;
+    height: 60px;
+    border: 3px solid gray;
+    border-radius: 50%;
+}
+.fix{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
