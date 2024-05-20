@@ -1,0 +1,47 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  h3 {
+    color: rgb(125, 221, 238);
+    background-color: rgb(231, 130, 206);
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  
+  p {
+    text-align: justify;
+    letter-spacing: 1px;
+    text-decoration: overline;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+    background-color: rgb(175, 234, 238);
+    line-height: 50px;
+  }
+  
+  span {
+    vertical-align: sub;
+    vertical-align: super;
+    background-color: rgb(108, 243, 153);
+  }
+  
+  .outer {
+    background-color: rgb(219, 248, 115);
+    height: 200px;
+    line-height: 100px;
+    position: relative;
+  }
+  .inner {
+    background-color: rgb(135, 155, 50);
+    margin: 0 25%;
+    display: flex;
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
