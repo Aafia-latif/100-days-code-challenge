@@ -1,0 +1,136 @@
+.flex{
+    display: flex;
+    gap: 20px;
+   }
+   
+   .icon{
+       background-color: aquamarine;
+       font-size: larger;
+       text-align: center;
+       padding: 5px;
+       font-weight: bolder;
+       height: 20px;
+       width: 60px;
+   }
+   
+   .title{
+       background-color: aquamarine;
+       flex-grow: 1;
+       padding: 5px;
+       font-size: larger;
+       text-align: center;
+       font-weight: bolder;
+       height: 20px;
+       width: 60px;
+   }
+   
+   h2{
+       color: black;
+       letter-spacing: 1px;
+       text-align: center;
+       background-color: aquamarine;
+       margin-left: 40%;
+       margin-right: 40%;
+       padding: 5px;
+   }
+   
+   .flexbox{
+       width: auto;
+       /* display: flex; */
+       /* display: flex; */
+       justify-content: center;
+       align-items: center;
+       /* justify-content: space-between; */
+       gap: 50px;
+       height: auto;
+       background-color: rgb(233, 201, 159);
+        margin: 0%;
+   }
+   h3{
+       padding: 0 5px;
+       font-size: larger;
+       text-decoration: underline;
+   }
+   .order{
+       height: 200px;
+       width: 200px;
+       background-color: aquamarine;
+   }
+   
+   .flex-grow{
+       height: 200px;
+       width: 200px;
+       background-color: aquamarine;
+   }
+   
+   .flex-basis{
+       height: 200px;
+       width: 200px;
+       background-color: aquamarine;
+   }
+   
+   .flex-shrink{
+       height: 200px;
+       width: 200px;
+       background-color: aquamarine;
+   }
+   
+   .align-self{
+       height: 200px;
+       width: 200px;
+       background-color: aquamarine;
+   }
+   h1{
+       background-color: aquamarine;
+       text-align: center;
+   }
+   
+   .Flexbox{
+       background-color: rgb(233, 201, 159) ;
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+       gap: 15px;
+   }
+   .box{
+       display: flex;
+       gap:  60px;
+   }
+   .div{
+       width: 350px;
+       height: 340px;
+   }
+   
+   .div1{
+         background-color: aquamarine; 
+         
+         /* margin-top: 100px;  */
+        margin-left: 10px;
+        text-align: justify;
+        letter-spacing: 1px;
+   
+    }
+   
+   .div2{
+       background-color: bisque;
+       
+   }
+   
+   .div3{
+       background-color: blueviolet;
+       /* margin-top: 50%; */
+     
+   }
+   
+   
+   h4{
+    text-align: center;
+    text-decoration: underline;
+   }
+   p{
+       text-indent: 50px;
+       padding: 0 30px;
+       font-size: medium;
+       text-align: center;
+   }
+   
