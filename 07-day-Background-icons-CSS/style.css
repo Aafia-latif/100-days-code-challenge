@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .section{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .section1{
+    background-color: blueviolet;
+    background-image: url("./sample.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+  }
+  
+  .fa-house{
+    color: rgb(23, 216, 230);
+    font-size: xx-large;
+  }
+  
