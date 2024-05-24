@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: bisque;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.card1{
+    background-color: violet;
+    margin-left: 10px;
+}
+.card2{
+    background-color: rgb(75, 169, 224);
+}
+.card3{
+    background-color: rgb(187, 74, 163);
+    margin-right: 10px;
+}
