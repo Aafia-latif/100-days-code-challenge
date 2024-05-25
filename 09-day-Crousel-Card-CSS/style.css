@@ -1,0 +1,124 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.card-wrap{
+    width: 25rem;
+    height: 25rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    background-color: #EBEDEE;
+    vertical-align: baseline;
+    padding: 1.4rem;
+    border-radius: 1rem;
+
+    /* margin-top: 25vh;
+    margin-left: 35vw; */
+
+}
+.header{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 1rem;
+    width: 100%;
+}
+
+.heading-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    line-height: 100%;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+/* ul{
+    display: flex;
+   list-style: none;
+   gap: 1rem;
+} */
+
+.price{
+    color:#141615;
+    font-weight: 200;
+}
+button{
+    border: none;
+}
+
+.btn-tricycle{
+    color: black;
+    background-color: transparent;
+    padding-top: 1.4rem;
+    padding-right: 0.7rem;
+    text-decoration: underline;
+}
+.btn-mini{
+    color: #C7C7C7;
+    background-color: transparent;
+    padding-top: 1.4rem;
+    padding-right: 0.7rem;
+}
+.btn-maxi{
+    color: #C7C7C7;
+    background-color: transparent;
+    padding-top: 1.4rem;
+    padding-right: 0.7rem;
+}
+.btn-junior{
+    color: #C7C7C7;
+    background-color: transparent;
+    padding-top: 1.4rem;
+    padding-right: 0.7rem;
+}
+
+.img-wrapper{
+    /* height: 18rem; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+   /* margin-top: 0.4rem;  */
+}
+img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.cta-buttons {
+    margin-top: 2rem;
+    right:2rem;
+    bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-buttons button{
+    border-radius: 3rem;
+    padding:0.4rem 0.9rem;
+     
+}
+
+.cta-buttons button.buy-now{
+ 
+    background: white;
+
+}
+
+.cta-buttons button.buy-now:hover{
+    background: black;
+    color: white;
+}
+
+.cta-buttons button.learn-more{
+    background: transparent;
+
+}
