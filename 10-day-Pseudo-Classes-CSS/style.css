@@ -1,0 +1,28 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a:link {
+    display: inline-block;
+    font-size: xx-large;
+    padding: 10px 20px;
+    background-color: rgb(131, 109, 226);
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+    margin: 100px 200px;
+    outline: none;
+    border: none;
+  }
+  
+  a:hover {
+    background-color: rgb(62, 186, 235);
+  }
+  
+  /* link
+  visited
+  hover
+  active */
+  
