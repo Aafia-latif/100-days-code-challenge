@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ;
+  }
+  
+html {
+    font-size: calc(10px + 1vmin);
+}
+  
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+  
+.table-wrapper {
+    top: 25%;
+    height: 78%;
+    /* height: 100vh; */
+    overflow-y: auto;
+    /* background-color: rgb(170, 214, 12); */
+    /* font-size: small; */
+    /* font-size: x-small; */
+    /* justify-content: center; */
+
+}
+  
+  .table-wrapper table{
+    /* width: 100%;
+    border-spacing:1.5rem 0; */
+    border-collapse: separate;
+    border-spacing: 0.5rem 0;
+
+  }
+  table {
+    border-collapse: collapse;
+
+  }
+ table thead th{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+}
+
+table thead th:nth-child(3)
+{
+  width: 180px;
+ }
+
+table th, tr, td{
+    padding: 0 1.5rem;
+}
+
+table tbody td:nth-child(odd){
+    background-color: bisque;
+  
+}
+
+table tbody td:nth-child(even){
+    background-color: rgb(231, 116, 197);
+
+}
+
+td::after{
+    content: '';
+    border-bottom: 3px solid black;
+    width: auto;
+    display: block;
+  }
