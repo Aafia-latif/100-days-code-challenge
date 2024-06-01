@@ -1,0 +1,62 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0055;
+    --color4: #9e0059;
+    --color5: #380099f7;
+  }
+  
+  html {
+    font-size: calc(10px + 1vmin);
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.gradient{
+     width: 350px;
+     height: 350px;
+     background: linear-gradient(-45deg, rgba(90, 238, 248, 0.575),rgba(250, 116, 255, 0.596));
+     border-radius: 10px;
+     margin-top: 3%;
+     margin-left: 35%;
+  }
+
+  span.tooltip {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: var(--color5);
+    border-radius: 10px;
+    text-wrap: nowrap;
+    color: white;
+    margin-left: 39%;
+    margin-top: 20px;
+  }
+  
+  div.triangle-wrapper {
+    position: relative;
+    margin-right: 70px;
+  }
+  
+  span.triangle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    rotate: 135deg;
+    background: linear-gradient(45deg, transparent 50%, #380099f6 50%);
+    right: 10%;
+    margin-top: -30px;
+}
