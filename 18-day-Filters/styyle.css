@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0054;
+    --color4: #9e0059;
+    --color5: #390099;
+  }
+  
+  html {
+    font-size: calc(10px + 1vmin);
+  }
+  
+  /* div {
+    background-color: #390099;
+  } */
+  
+  main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    background-image: url("./sample.png")
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  div.inner1 {
+    position: absolute;
+    z-index: 1;
+    width: 700px;
+    height: 400px;
+    background: linear-gradient(-45deg, #e600ff63, #00068068);
+    border-radius: 10px;
+    animation: colorize 2s infinite alternate-reverse;
+    /* backdrop-filter: blur(5px); */
+    /* background-color: #ffffff00; */
+  }
+  
+  div.circle {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+  z-index: 0;
+    border-radius: 50%;
+    background: #10b488;
+    /* box-shadow: 0px 0px 100px 10px white; */
+  
+    /* z-index: -10; */
+
+    animation-name: Circle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+  }
+  
+  @keyframes Circle{
+    0%{
+        transform: scale(0);
+        opacity: 2;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+
+ }
+  @keyframes colorize {
+    to {
+      filter: hue-rotate(90deg);
+    }
+  }
+  
+  div.inner {
+    width: 700px;
+    height: 400px;
+    background-color: #ffffff59;
+    opacity: 0.5;
+    user-select: none;
+  /* z-index: 1; */
+    /* backdrop-filter: blur(10px) hue-rotate(50deg); */
+    /* backdrop-filter: sepia(50%); */
+    /* backdrop-filter: hue-rotate(50deg); */
+  
+    /* backdrop-filter: invert(100%); */
+  
+    /* -webkit-backdrop-filter: contrast(200%); */
+    /* backdrop-filter: contrast(200%); */
+     /* backdrop-filter: brightness(100%); */
+    /* backdrop-filter: contrast(100%); */
+  
+    /* filter: opacity(0.5); */
+  }
+/*   
+  div.inner::selection {
+    background-color: rgb(205, 255, 67);
+  }
+  
+  img {
+    box-shadow: 10px 10px 20px 100px black;
+  
+    -webkit-backdrop-filter: drop-shadow(10px 10px 20px black);
+    backdrop-filter: drop-shadow(10px 10px 20px black);
+  
+    filter: drop-shadow(10px 10px 4px #4444dd);
+  } */
