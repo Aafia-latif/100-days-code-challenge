@@ -1,0 +1,113 @@
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  form{
+    min-width: 10rem;
+    flex-wrap: wrap;
+  }
+ 
+    .flex{
+      display: flex;
+      flex-grow: 1;
+        gap: 1rem;
+        /* flex-wrap: wrap; */
+    }
+  /* Form styles */
+  .form-row {
+    /* Make form elements display in a row */
+    display: flex;
+    /* Allow elements to wrap to the next line on smaller screens */
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    
+    margin-bottom: 15px; 
+    width: 100%; 
+
+  }
+  
+  .form-control {
+    display: block;
+    min-width:11rem;
+    width: 100%;
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid #f3ecec;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+  }
+
+  .img-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-group button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #select{
+    color: #ffffff;
+    background-color: black;
+  }
+
+ #submit{
+   color: #ffffff;
+   background-color: #b4b4b4;
+ }
+
+  .publish button{
+    background: #360ee6;
+    color: #ffffff;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5%;
+  }
+  
+  .form-group button:hover {
+    background-color: #ddd;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  textarea {
+    resize: none;
+    height: auto; 
+  }
+  
+  
+  .required::after {
+    content: "*";
+    color: red;
+  }
+   

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Creation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <div class="form-row">
+                  
+                    <div class="flex">
+                        <div class="form-group">
+                            <label for="courseTitle">Course Title:</label>
+                            <input type="text" class="form-control" id="courseTitle" name="courseTitle" placeholder="Enter Course Title">
+                        </div>
+                        <div class="form-group ">
+                            <label for="courseSlug">Course Slug:</label>
+                            <input type="text" class="form-control" id="courseSlug" name="courseSlug" placeholder="Enter Course Slug">
+                        </div>
+                    </div>
+                
+            </div>
+                  <div class="flex">
+                    <div class="form-group">
+                        <label class="required" for="courseAbstract">Course Abstract:</label>
+                        <textarea class="form-control" id="courseAbstract" name="courseAbstract" rows="3" placeholder="Enter Course Abstract" ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="required" for="courseDescription">Course Description:</label>
+                        <textarea class="form-control" id="courseDescription" name="courseDescription" rows="3" placeholder="Enter Course Description"  ></textarea>
+                    </div>
+                  </div>
+                  <div class="flex">
+
+                    <div class="form-group">
+                        <label   class="required"for="courseSyllabus">Course Syllabus:</label>
+                        <textarea class="form-control" id="courseSyllabus" name="courseSyllabus" rows="3" placeholder="Enter Course Syllabus" ></textarea>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="learn">What you will Learn?: </label>
+                        <textarea class="form-control" id="learn" name="courseSyllabus" rows="3" placeholder="Enter Course Syllabus" ></textarea>
+                    </div>
+                  </div>
+            
+            <div class="form-row">
+                  <div class="flex">
+                    <div class="form-group ">
+                        <label  class="required" for="courseTeacher">Course Teacher:</label>
+                        <select id="courseTeacher" name="courseTeacher" class="form-control" >
+                            <option selected>Select Teacher</option>
+                            <option value="1">Teacher 1</option>
+                            <option value="2">Teacher 2</option>
+                            <option value="3">Teacher 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="required" for="feePerMonth">Fee per Month:</label>
+                        <input type="number" class="form-control" id="feePerMonth" name="feePerMonth" placeholder="0" >
+                    </div>
+                    </div>
+                    <div class="flex">
+                    <div class="form-group ">
+                        <label  class="required" for="availableSeats">Available Seats:</label>
+                        <input type="number" class="form-control" id="availableSeats" name="availableSeats" placeholder="Enter Total Seats" >
+                    </div>
+                    <div class="form-group ">
+                        <label class="required" for="courseDuration">Duration:</label>
+                        <input type="number" class="form-control" id="courseDuration" name="courseDuration" placeholder="Enter Total Seats" >
+                    </div>
+                  </div>
+            </div>
+            <div class="form-row">
+                <div class="flex">
+                    <div class="form-group ">
+                        <label class="required" for="lectures">Lectures:</label>
+                        <input type="number" class="form-control" id="lectures" name="lectures" placeholder="0">
+                    </div>
+                    <div class="form-group ">
+                        <label class="required" for="registerBefore">Register before:</label>
+                        <input type="date" class="form-control" id="registerBefore" name="registerBefore" >
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="form-group ">
+                        <label class="required" for="courseStartDate">Course Starting date:</label>
+                        <input type="date" class="form-control" id="courseStartDate" name="courseStartDate" >
+                    </div>
+                    <div class="form-group ">
+                        <label  class="required"for="courseEndDate" > Course Ending date:</label>
+                        <input type="date" class="form-control" id="courseEndDate" name="courseEndDate" >
+                   </div>
+               </div>
+            </div>
+            
+            <div class="form-row">
+                
+                <div class="flex">
+                    <div class="form-group ">
+                        <label  class="required" for="lecture">Lecture Modality:</label>
+                        <select id="lecture" name="lecture" class="form-control" required>
+                            <option selected>Select Modality</option>
+                            <option value="1">Visualy</option>
+                            <option value="2">Auditory</option>
+                            <option value="3">Tactile</option>
+                            <option value="4">Kinesthetic</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group ">
+                        <label   class="required" for="level">Course level:</label>
+                        <select id="level" name="courseLevel" class="form-control" required>
+                            <option selected>Select Level</option>
+                            <option value="1">Level  1</option>
+                            <option value="2">Level 2</option>
+                            <option value="3">Level 3</option>
+                        </select>
+                    </div>
+                </div>
+            
+                
+         
+                
+                <div class="flex">
+                    <div class="form-group ">
+                        <label class="required" for="admission">Admission Status:</label>
+                        <select id="admission" name="admissionStatus" class="form-control" >
+                            <option selected>Select Admission Status</option>
+                            <option value="1">Admit</option>
+                            <option value="2">Referred</option>
+                            <option value="3">Deferred</option>
+                            <option value="4">Denied</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="required" for="courseStatus">Course Status:</label>
+                        <select id="courseStatus" name="courseStatus" class="form-control" >
+                            <option selected>Select Course Status</option>
+                            <option value="1">Progress</option>
+                            <option value="2">Withdrawn</option>
+                            <option value="3">Audit</option>
+                            <option value="4">Failed</option>
+                        </select>
+                    </div>
+                </div>
+              
+            </div>
+          <div class="img-wrapper">
+                <div class="form-group ">
+                    <label for="courseImage">Image:</label>
+                    <input type="file" id="courseImage" name="courseImage" accept="image/*">
+                    <button  id="select" type="button">Select File</button>
+                    <button id="submit" type="submit">Upload</button>
+                </div>
+          </div>
+             
+           <div class="form-group publish">
+               <button type="submit">Publish Course</button>
+            </div>
+            
+        </form>
+    </main>
+</body>     
