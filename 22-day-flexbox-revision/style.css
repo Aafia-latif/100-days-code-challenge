@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div.flex-wrapper{
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    /* align-items: center; */
+    justify-self: center;
+}
+
+div.card{
+    width: 15rem;
+    height: 15rem;
+    border: 0.1rem solid #eba626;
+    background-color: #f0e0c1;
+    /* flex-grow: 1;*/
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    position: relative;
+    justify-content: center;
+}
+
+
+div.card > i{
+    color: #d39521;
+    font-size: 3rem;
+    transform: translate(5.5rem, -1.5rem);
+}
+
+div.card > h3{
+    color: #ecb246;
+    transform: translate(2.5rem, -0.5rem);
+}
+
+div.card > p{
+  text-align: justify;   
+}
