@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: calc(12px + 1vmin);
+}
+
+@property --border-color {
+    initial-value:#000000;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --color1 {
+    initial-value: #833ab4;
+    syntax: "<color>";
+    inherits: false;
+}
+@property --color2 {
+    initial-value: #fd1d1d;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --color3 {
+    initial-value: #fcb045;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --color-radial1 {
+    initial-value: #feac5e;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --color-radial2 {
+    initial-value: #c779d0;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --color-radial3 {
+    initial-value: #4bc0c8;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --color-conic1 {
+    initial-value: #cc95c0;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --color-conic2 {
+    initial-value: #ffffff;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --color-conic3 {
+    initial-value: #7aa1d2;
+    syntax: "<color>";
+    inherits: false;
+}
+
+@property --angle {
+    initial-value: 135deg;
+    syntax: "<angle>";
+    inherits: false;
+}
+
+@property --angle2 {
+    initial-value: 315deg;
+    syntax: "<angle>";
+    inherits: false;
+}
+
+@property --angle-start {
+    initial-value: 90deg;
+    syntax: "<angle>";
+    inherits: false;
+}
+
+@property --angle-mid {
+    initial-value: 270deg;
+    syntax: "<angle>";
+    inherits: false;
+}
+
+@property --angle-end {
+    initial-value: 360deg;
+    syntax: "<angle>";
+    inherits: false;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+main div.gradient {
+    width: 20rem;
+    height: 20rem;
+    border: 0.2rem solid var(--border-color);
+    border-radius: 5%;
+}
+
+main div.linear-gradient {
+    background-image: repeating-linear-gradient(
+    to bottom right,
+    var(--color1) 0px 10px,
+    var(--color2) 10px 20px,
+    var(--color3) 20px 30px
+    );
+    background-position: 0 0;
+  /* transition: background-position 0.5s ease; */
+    transition: background-position 0.5s ease-in-out;
+}
+
+main div.radial-gradient {
+    background-color: white;
+  /* border: none; */
+    background-image: radial-gradient(
+    circle,
+    var(--color-radial1) 30%,
+    var(--color-radial2) 50%,
+    var(--color-radial3) 85%
+    );
+  /* background-size: cover; */
+  /* background-size: 50% 50%; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-position 0.5s ease-in-out;
+}
+
+main div.conic-gradient {
+  /* background-color: rgb(109, 107, 230); */
+    background-image: conic-gradient(
+    from var(--angle),
+    var(--color-conic1) var(--angle-start),
+    var(--color-conic2) var(--angle-mid),
+    var(--color-conic3) var(--angle-end)
+    );
+  /* animation: rotate 0.5s linear ease; */
+  /* transition: transform 0.5s ease-in-out; */
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.linear-gradient:hover {
+  /* background-position: 9.5rem 0; */
+    background-position: 20rem 0;
+}
+
+.radial-gradient:hover {
+    background-image: radial-gradient(
+    circle at top left,
+    var(--color-radial1) 30%,
+    var(--color-radial2) 50%,
+    var(--color-radial3) 85%
+    );
+  /* background-position: 0 0; */
+    /* background-position:  at 0 100%;
+    transform: translateX(-50%) translateY(-50%); */
+}
+
+.conic-gradient:hover {
+    background-image: conic-gradient(
+        from var(--angle2),
+        var(--color-conic2) var(--angle-start),
+        var(--color-conic3) var(--angle-mid),
+        var(--color-conic1) var(--angle-end)
+        );
+        
+        /* transform: rotate(360deg); */
+  /* background-color: transparent; */
+  /* transform: rotate(45deg) scale(1.45); */
+  /* transform: rotate(180deg) translateX(-50%) translateY(-50%); */
+}
+
+
