@@ -153,6 +153,7 @@ main div.conic-gradient {
   /* transition: transform 0.5s ease-in-out; */
     background-size: cover;
     transition: background-image 0.5s ease-in-out;
+    /* animation: rotate 4s linear infinite; */
 }
 
 .linear-gradient:hover {
@@ -173,17 +174,22 @@ main div.conic-gradient {
 }
 
 .conic-gradient:hover {
+    animation: rotate 4s linear infinite;
     background-image: conic-gradient(
-        from var(--angle2),
+        from var(--angle),
         var(--color-conic2) var(--angle-start),
         var(--color-conic3) var(--angle-mid),
         var(--color-conic1) var(--angle-end)
         );
-        
-        /* transform: rotate(360deg); */
+        /* transform: rotate(360deg) 2s  linear infinite; */
   /* background-color: transparent; */
   /* transform: rotate(45deg) scale(1.45); */
   /* transform: rotate(180deg) translateX(-50%) translateY(-50%); */
 }
 
+@keyframes rotate {
+    to {
+    --angle: 360deg;
+    }
+}
 
