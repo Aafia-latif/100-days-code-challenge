@@ -1,0 +1,476 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: calc(12px + 1vmin);
+}
+
+@property --linear-color1 {
+  initial-value: #ff000080;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --linear-color2 {
+  initial-value: #ff990080;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --linear-color3 {
+  initial-value: #ffff0080;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --linear-color4 {
+  initial-value: #00ff0080;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --linear-color5 {
+  initial-value: #0000ff80;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --linear-color6 {
+  initial-value: #4b008280;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --linear-color7 {
+  initial-value: #ee82ee80;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --linear-color8 {
+  initial-value: #ff0000;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --linear-color9 {
+  initial-value: #ffa500;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --linear-color10 {
+  initial-value: #ffff00;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --linear-color11 {
+  initial-value: #008000;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --linear-color12 {
+  initial-value: #0000ff;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --linear-color13 {
+  initial-value: #4b0082;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --linear-color14 {
+  initial-value: #ee82ee;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --border-color {
+  initial-value: #000000;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --color1 {
+  initial-value: #833ab4;
+  syntax: "<color>";
+  inherits: false;
+
+}
+@property --color2 {
+  initial-value: #fd1d1d;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --color3 {
+  initial-value: #fcb045;
+  syntax: "<color>";
+  inherits: false;
+
+}
+
+@property --color-radial1 {
+  initial-value: #feab5ea4;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --color-radial2 {
+  initial-value: #c779d094;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --color-radial3 {
+  initial-value: #4bc0c88c;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --color-conic1 {
+  initial-value: #cc95c0;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --color-conic2 {
+  initial-value: #ffffff;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --color-conic3 {
+  initial-value: #7aa1d2;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic4 {
+  initial-value: #5691f580;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic5 {
+  initial-value: #b338ff80;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic6 {
+  initial-value: #f8305880;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic7 {
+  initial-value: #e856f580;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic8 {
+  initial-value: #ff384c80;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic9 {
+  initial-value: #e7f83080;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic10 {
+  initial-value: #f58356ff;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic11 {
+  initial-value: #caff38ff;
+  syntax: "<color>";
+  inherits: false;
+}
+@property --color-conic12 {
+  initial-value: #30f88aff;
+  syntax: "<color>";
+  inherits: false;
+}
+
+@property --angle {
+  initial-value: 135deg;
+  syntax: "<angle>";
+  inherits: false;
+}
+
+@property --angle2 {
+  initial-value: 315deg;
+  syntax: "<angle>";
+  inherits: false;
+}
+
+@property --angle-start {
+  initial-value: 30deg;
+  syntax: "<angle>";
+  inherits: false;
+}
+
+@property --angle-mid {
+  initial-value: 60deg;
+  syntax: "<angle>";
+  inherits: false;
+}
+
+@property --angle-end {
+  initial-value: 180deg;
+  syntax: "<angle>";
+  inherits: false;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+main div.gradient {
+  width: 20rem;
+  height: 20rem;
+  border: 0.2rem solid var(--border-color);
+  border-radius: 5%;
+}
+
+main div.linear-gradient {
+  background: repeating-linear-gradient(
+      120deg,
+      var(--linear-color1) 0 40px,
+      var(--linear-color2) 40px 80px,
+      var(--linear-color3) 80px 120px,
+      var(--linear-color4) 120px 160px,
+      var(--linear-color5) 160px 200px,
+      var(--linear-color6) 200px 240px,
+      var(--linear-color7) 240px 280px,
+      var(--linear-color1) 300px
+    ),
+    repeating-linear-gradient(
+      -190deg,
+      var(--linear-color1) 0 30px,
+      var(--linear-color2) 30px 60px,
+      var(--linear-color3) 60px 90px,
+      var(--linear-color4) 90px 120px,
+      var(--linear-color5) 120px 150px,
+      var(--linear-color6) 150px 180px,
+      var(--linear-color7) 180px 210px,
+      var(--linear-color1) 210px 230px
+    ),
+    repeating-linear-gradient(
+      50deg,
+      var(--linear-color8) 0 50px,
+      var(--linear-color9) 50px 100px,
+      var(--linear-color10) 100px 150px,
+      var(--linear-color11) 150px 200px,
+      var(--linear-color12) 200px 250px,
+      var(--linear-color13) 250px 300px,
+      var(--linear-color14) 300px 350px,
+      var(--linear-color8) 350px 370px
+    );
+  /* background-image: */
+  /* repeating-linear-gradient(
+    20deg,
+    var(--color1) 40px,
+    var(--color2) 80px,
+    var(--color3) 120px
+    ), */
+  /* repeating-linear-gradient(
+        30deg,
+        var(--color-radial1) 30px,
+        var(--color-radial2) 60px,
+        var(--color-radial3) 90px
+        ),
+    repeating-linear-gradient(
+        40deg,
+            var(--color-conic1) 50px,
+            var(--color-conic2) 100px,
+            var(--color-conic3) 150px
+        ); */
+
+  background-position: 0 0;
+  transition: background-position 0.5s ease-in-out;
+  /* background-size: 200% 200%; */
+  /* background-position: 0% 0%; */
+  /* transition: background-position 0.5s ease; */
+}
+
+main div.radial-gradient {
+  /* background-color: white; */
+  /* border: none; */
+  background-image: repeating-radial-gradient(
+      /* circle, */ var(--color-radial1),
+      var(--color-radial3),
+      var(--color-radial2) 15px,
+      var(--color-radial3) 30px
+    ),
+    repeating-radial-gradient(
+      /* circle, */
+        var(--color1),
+        var(--color3),
+        var(--color2) 25px,
+        var(--color3) 50px
+    );
+  transition: background-position 0.5s ease-in-out;
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-size: 20rem 20rem, 40rem 40rem; */
+  /* background-size: cover; */
+  /* background-size: 50% 50%; */
+}
+
+main div.conic-gradient {
+  background-image: repeating-conic-gradient(
+      from 45deg at 80% 50%,
+      var(--color-conic4) 0% 5.25%,
+      var(--color-conic5) 5.25% 10.5%,
+      var(--color-conic6) 10.5% 15%
+    ),
+    repeating-conic-gradient(
+      from 15deg at 50% 30%,
+      var(--color-conic7) 0% 5.25%,
+      var(--color-conic8) 5.25% 10.5%,
+      var(--color-conic9) 10.5% 15%
+    ),
+    repeating-conic-gradient(
+      from 45deg at 20% 50%,
+      var(--color-conic10) 0% 5.25%,
+      var(--color-conic11) 5.25% 10.5%,
+      var(--color-conic12) 10.5% 15%
+    );
+
+  /* background-image: conic-gradient(
+        from var(--angle),
+        var(--color-conic1) var(--angle-start),
+        var(--color-conic2) var(--angle-mid),
+        var(--color-conic3) var(--angle-end)
+        );
+        background-size: cover;
+        transition: background-image 0.5s ease-in-out; */
+  /* animation: rotate 0.5s linear ease; */
+  /* transition: transform 0.5s ease-in-out; */
+  /* background-color: rgb(109, 107, 230); */
+}
+
+.linear-gradient:hover {
+  /* background-position: 9.5rem 0; */
+  background-position: 19.7rem 0;
+  /* background-position: 100% 100%; */
+}
+
+.radial-gradient:hover {
+  /* background-image: repeating-radial-gradient(
+    circle  at 80% 50%,
+    var(--color-radial1) 15%,
+    var(--color-radial2) 30%,
+    var(--color-radial3) 60%
+    ),
+    repeating-radial-gradient(
+    circle at 20% 50%,
+    var(--color1) 20%,
+    var(--color2) 35%,
+    var(--color3) 65%
+    ); */
+
+  /* background-image: repeating-radial-gradient(
+    circle at top left,
+    var(--color-radial1) 15%,
+    var(--color-radial2) 30%,
+    var(--color-radial3) 60%
+    ),
+    repeating-radial-gradient(
+        circle at top right,
+        var(--color-radial2) 15%,
+        var(--color-radial3) 30%,
+        var(--color-radial1) 60%
+        ); */
+        /* opacity: 0.7; */
+  background-image: repeating-radial-gradient(
+      /* circle at top left, circle at top left, */
+      circle at top left,
+      var(--color-radial1),
+      var(--color-radial3),
+      var(--color-radial2) 15px,
+      var(--color-radial3) 30px
+    ),
+    repeating-radial-gradient(
+      /* circle at top right, circle at 50% 50%, */
+      circle at bottom right,
+      var(--color1),
+      var(--color3),
+      var(--color2) 25px,
+      var(--color3) 50px
+    );
+  /* background-position: 0 0; */
+  /* background-position:  at 0 100%;
+    transform: translateX(-50%) translateY(-50%); */
+}
+
+.conic-gradient:hover {
+  background-image: repeating-conic-gradient(
+      from 45deg at top left,
+      var(--color-conic4) 0% 5.25%,
+      var(--color-conic5) 5.25% 10.5%,
+      var(--color-conic6) 10.5% 15%
+    ),
+    repeating-conic-gradient(
+      from 15deg at top right,
+      var(--color-conic7) 0% 5.25%,
+      var(--color-conic8) 5.25% 10.5%,
+      var(--color-conic9) 10.5% 15%
+    ),
+    repeating-conic-gradient(
+      from 45deg at bottom left,
+      var(--color-conic10) 0% 5.25%,
+      var(--color-conic11) 5.25% 10.5%,
+      var(--color-conic12) 10.5% 15%
+    );
+  /* animation: rotate 4s linear infinite; */
+  /* animation: gradient-rotation 5s linear infinite; */
+  /* transform-origin: center center; */
+  /* background-image: repeating-conic-gradient(
+    from 45deg at 20% 50%,
+    var(--color-conic4) 0% 8.25%,
+    var(--color-conic5) 8.25% 16.5%,
+    var(--color-conic6) 16.5% 25%
+  ),
+  repeating-conic-gradient(
+    from 0deg at 40% 50%,
+    var(--color-conic7) 0 5.25deg,
+    var(--color-conic8) 5.25deg 10.5deg,
+    var(--color-conic9) 10.5deg 15deg
+  ),
+  repeating-conic-gradient(
+    from 45deg at 80% 50%,
+    var(--color-conic10) 0 8.25deg,
+    var(--color-conic11) 8.25deg 16.5deg,
+    var(--color-conic12) 16.5deg 25deg
+  ); */
+
+  /* background-image: conic-gradient(
+        from var(--angle2),
+        var(--color-conic2) var(--angle-start),
+        var(--color-conic3) var(--angle-mid),
+        var(--color-conic1) var(--angle-end)
+        ); */
+
+  /* transform: rotate(360deg); */
+  /* background-color: transparent; */
+  /* transform: rotate(45deg) scale(1.45); */
+  /* transform: rotate(180deg) translateX(-50%) translateY(-50%); */
+}
+
+@keyframes gradient-rotation {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
