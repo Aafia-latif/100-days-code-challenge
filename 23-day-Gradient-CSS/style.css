@@ -144,11 +144,17 @@ main div.radial-gradient {
 main div.conic-gradient {
   /* background-color: rgb(109, 107, 230); */
     background-image: conic-gradient(
-    from var(--angle),
+    from at top left,
     var(--color-conic1) var(--angle-start),
     var(--color-conic2) var(--angle-mid),
     var(--color-conic3) var(--angle-end)
     );
+    /* background-image: conic-gradient(
+    from var(--angle),
+    var(--color-conic1) var(--angle-start),
+    var(--color-conic2) var(--angle-mid),
+    var(--color-conic3) var(--angle-end)
+    ); */
   /* animation: rotate 0.5s linear ease; */
   /* transition: transform 0.5s ease-in-out; */
     background-size: cover;
@@ -157,6 +163,12 @@ main div.conic-gradient {
 }
 
 .linear-gradient:hover {
+    background-image: repeating-linear-gradient(
+        to left,
+        var(--color1) 0px 10px,
+        var(--color2) 10px 20px,
+        var(--color3) 20px 30px
+        );
   /* background-position: 9.5rem 0; */
     background-position: 20rem 0;
 }
@@ -174,9 +186,9 @@ main div.conic-gradient {
 }
 
 .conic-gradient:hover {
-    animation: rotate 4s linear infinite;
+    /* animation: rotate 4s linear infinite; */
     background-image: conic-gradient(
-        from var(--angle),
+        from var(--angle2),
         var(--color-conic2) var(--angle-start),
         var(--color-conic3) var(--angle-mid),
         var(--color-conic1) var(--angle-end)
@@ -187,9 +199,9 @@ main div.conic-gradient {
   /* transform: rotate(180deg) translateX(-50%) translateY(-50%); */
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     to {
     --angle: 360deg;
     }
-}
+} */
 
