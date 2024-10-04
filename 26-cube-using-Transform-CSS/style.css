@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0054;
+    --color4: #9e0059;
+    --color5: #390099;
+  }
+
+  body {
+    font-size: calc(10px + 1vmin);
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  
+  main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+  
+  
+  main div.cube {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.4s linear;
+    /* animation: spin 5s linear infinite; */
+  }
+  
+  main div.cube:hover {
+    transform: rotateX(20deg) rotateY(90deg);
+  }
+  
+  main div.cube div.face {
+    font-size: xx-large;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 20px black;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  
+  main div.cube div.front {
+    transform: translateZ(150px);
+  }
+  main div.cube div.back {
+    transform: translateZ(-150px);
+  }
+  
+  main div.cube div.left {
+    transform: translateX(-150px) rotateY(90deg);
+  }
+  main div.cube div.right {
+    transform: translateX(150px) rotateY(90deg);
+  }
+  main div.cube div.top {
+    transform: translateY(-150px) rotateX(90deg);
+  }
+  main div.cube div.bottom {
+    transform: translateY(150px) rotateX(90deg);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg) rotateX(0deg);
+    }
+    100% {
+      transform: rotateY(360deg) rotateX(360deg);
+    }
+  }
