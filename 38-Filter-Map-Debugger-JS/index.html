@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Concepts: Filter, Map, Debugger</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>🚀 JavaScript Concepts: Filter, Map & Debugger</h1>
+        <p>Open the browser console (Right-click → Inspect → Console) to see how these methods work!</p>
+    </header>
+
+    <main class="card-container">
+        <!-- Filter Card -->
+        <div class="card">
+            <h2>🔍 <code>filter()</code> Method</h2>
+            <p>
+                The <strong>filter()</strong> method creates a new array filled with elements that pass a test provided
+                by a function.
+                It’s used to extract elements based on specific conditions.
+            </p>
+            <pre><code>// Example:
+const adults = users.filter(user => user.age >= 18);</code></pre>
+        </div>
+
+        <!-- Map Card -->
+        <div class="card">
+            <h2>🗺️ <code>map()</code> Method</h2>
+            <p>
+                The <strong>map()</strong> method creates a new array by transforming each element of the original array
+                using a function.
+                It’s useful for changing structure or values.
+            </p>
+            <pre><code>// Example:
+const names = users.map(user => user.name);</code></pre>
+        </div>
+
+        <!-- Debugger Card -->
+        <div class="card">
+            <h2>🛠️ <code>debugger</code> Statement</h2>
+            <p>
+                The <strong>debugger</strong> keyword stops execution of JavaScript and calls the debugging function.
+                This allows developers to inspect and trace code behavior in browser dev tools.
+            </p>
+            <pre><code>// Example:
+function check(data) {
+  debugger;
+  return data.map(...);
+}</code></pre>
+        </div>
+    </main>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
