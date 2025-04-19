@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation - Day 39</title>
+</head>
+
+<body>
+    <h1 id="main-heading">DOM Manipulation - Day 39</h1>
+
+    <div style="text-align: center;">
+        <button id="change-text">Change Text</button>
+        <button id="change-style">Toggle Style</button>
+        <button id="add-item">Add Item</button>
+        <button id="remove-item">Remove Item</button>
+    </div>
+
+    <div class="card-container">
+        <!-- Checklist card will be added via JavaScript -->
+
+        <div class="card">
+            <h3>Text Manipulation</h3>
+            <p class="description">This text will change when you click the "Change Text" button.</p>
+        </div>
+
+        <div class="card">
+            <h3>List Operations</h3>
+            <ul id="item-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Live Input Preview</h3>
+            <input type="text" id="live-input" placeholder="Type something...">
+            <p id="live-preview">Live preview will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
