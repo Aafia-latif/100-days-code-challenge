@@ -1,0 +1,67 @@
+/* Default Light Theme */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#clock {
+  font-size: 4rem;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+#theme-toggle {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #555;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark #clock {
+  background-color: #1e1e1e;
+  color: #0f0;
+  box-shadow: 0 4px 20px rgba(0, 255, 0, 0.2);
+}
+
+body.dark #theme-toggle {
+  background-color: #0f0;
+  color: #000;
+}
+
+body.dark #theme-toggle:hover {
+  background-color: #0c0;
+}
