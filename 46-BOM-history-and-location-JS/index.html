@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Day 46 - BOM History & Location Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">BOM History & Location Explorer</h1>
+
+        <section class="card" id="location-info">
+            <h2>Current Location Info</h2>
+            <ul class="info-list">
+                <li><span class="label" title="Complete URL including protocol, hostname, path, query and hash">URL
+                        (href):</span> <span id="href"></span></li>
+                <li><span class="label" title="Domain name of the web page">Hostname:</span> <span id="hostname"></span>
+                </li>
+                <li><span class="label" title="Protocol used (http, https)">Protocol:</span> <span id="protocol"></span>
+                </li>
+                <li><span class="label" title="Path after the domain name">Pathname:</span> <span id="pathname"></span>
+                </li>
+                <li>
+                    <span class="label" title="URL query parameters parsed as key-value pairs">Search Params:</span>
+                    <ul id="search-params" class="nested-list"></ul>
+                </li>
+                <li><span class="label" title="URL fragment/hash (after #)">Hash:</span> <span id="hash"></span></li>
+                <li><span class="label" title="Referrer URL (previous page URL)">Referrer:</span> <span
+                        id="referrer"></span></li>
+                <li>
+                    <span class="label" title="Browser geolocation coordinates (if allowed)">Geolocation:</span>
+                    <span id="geolocation">Fetching...</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card" id="history-info">
+            <h2>Browser History</h2>
+            <p class="history-length">Total history entries: <span id="history-length"></span></p>
+            <div class="button-group">
+                <button id="back-btn" class="btn" title="Go back in history">Back</button>
+                <button id="forward-btn" class="btn" title="Go forward in history">Forward</button>
+                <button id="reload-btn" class="btn" title="Reload the current page">Reload</button>
+            </div>
+
+            <h3>Advanced History API</h3>
+            <div class="history-api-buttons">
+                <button id="push-state-btn" class="btn secondary" title="Add new history entry with custom state">Push
+                    State</button>
+                <button id="replace-state-btn" class="btn secondary"
+                    title="Replace current history entry with new state">Replace State</button>
+                <button id="clear-log-btn" class="btn secondary" title="Clear navigation log">Clear Log</button>
+            </div>
+
+            <div id="history-log-container">
+                <h4>Navigation Log:</h4>
+                <ul id="history-log" class="history-log"></ul>
+            </div>
+        </section>
+
+        <section class="card" id="navigate-section">
+            <h2>Navigate to a New URL</h2>
+            <input type="text" id="url-input" placeholder="Enter URL (e.g. https://google.com)" />
+            <button id="go-btn" class="btn">Go</button>
+        </section>
+
+        <section class="card dark-mode-toggle-section">
+            <label for="dark-mode-toggle" class="dark-mode-label">
+                <input type="checkbox" id="dark-mode-toggle" />
+                Toggle Dark Mode
+            </label>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
