@@ -1,0 +1,72 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #f2f2f2, #e3e8eb);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0066cc;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+button {
+  background-color: #fff;
+  border: 2px solid #0066cc;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: #0066cc;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #0066cc;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.output-container {
+  background: #fff;
+  margin: 0 auto 2rem;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.1);
+}
+
+.output {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0066cc;
+  font-size: 0.9rem;
+  color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
