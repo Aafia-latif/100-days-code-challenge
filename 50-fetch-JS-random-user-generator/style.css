@@ -1,0 +1,99 @@
+/* Base layout */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f4f8;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Buttons */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.secondary-btn {
+  background: #28a745;
+  margin-top: 5px;
+}
+
+.secondary-btn:hover {
+  background: #1c7e32;
+}
+
+/* Card styling */
+.card {
+  margin-top: 20px;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0;
+  color: #444;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+}
+
+td img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Hide view */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 50 - Fetch JS Random User Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Generator View -->
+        <div id="generatorView">
+            <h1>Random User</h1>
+            <button id="generateBtn">Generate User</button>
+            <div id="userCard" class="card"></div>
+            <button id="showTableBtn" class="secondary-btn">Show Previous Users</button>
+        </div>
+
+        <!-- Table View -->
+        <div id="tableView" class="hidden">
+            <h2>Previous Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Picture</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody"></tbody>
+            </table>
+            <button id="backBtn" class="secondary-btn">Back to Generator</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
